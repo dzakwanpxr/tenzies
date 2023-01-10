@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  background-color: #0B2434;
+  padding: 20px;
+}
+
+main {
+  max-width: 500px;
+  height: 500px;
+  background-color: #F5F5F5;
+  margin: auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.dice {
+  padding: 30px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 3.81277px;
+  cursor: pointer;
+}
+
+.container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.dice-number {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.reroll-dice {
+  background: #5035FF;
+  box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+  border-radius: 5px;
+  border: none;
+  width: 150px;
+  height: 40px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.reroll-dice:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+.instructions {
+  font-weight: 400;
+  text-align: center;
+  max-width: 350px;
+}
+
+.misc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 15px;
+}
